@@ -25,7 +25,8 @@ class StoreCommentRequest extends FormRequest
             'user_name' => ['required'],
             'body' => ['required'],
             'email' => ['required'],
-            'parent_id' => ['nullable']
+            'parent_id' => ['nullable'],
+            'home_page' => ['nullable'] 
         ];
     }
 }

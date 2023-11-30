@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/comments',[App\Http\Controllers\Api\CommentController::class, 'index'])->name('index');
+Route::post('/add',[App\Http\Controllers\Api\CommentController::class, 'store'])->name('store');
